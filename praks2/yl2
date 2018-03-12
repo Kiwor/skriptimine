@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Kevin-Kristjan" #kasutajanimi
+echo "ISP117" #õpilaasgrupp
+echo "Skriptimine on huvitav!" #Teade
