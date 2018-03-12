@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#kasutajate nimekiri kujul Perenimi, Eesnimi
+#
+#skripti algus
+#
+who | cut -f1 -d" " | -f2 -d"." > perenimi # lõikab perenime
+who | cut -f1 -d" " | -f1 -d"." > eesnimi # lõikab eesnime
+paste -d"." perenimi eesnimi > nimed # kleebib need omavahel kokku
+cat nimed | sort | uniq # sorteerib väljundi ja sorteerib korduvad välja
+#
+# skripti lõpp
