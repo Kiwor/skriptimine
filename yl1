@@ -1,0 +1,10 @@
+#!/bin/bash
+# My first script
+#
+#
+# See käsk prindib ekraanile jutumärkide sees paikneva teksti:
+echo -n "Tere, " # Väljasta ilma reavahetuseta Tere, 
+echo -n "Kevin-Kristjan" # väljasta ilma reavahetuseta Kevin-Kristjan
+echo "!" # väljasta hüüumärk ja tee reavahetus
+#
+# lõpp
