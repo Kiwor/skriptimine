@@ -1,0 +1,12 @@
+#!/bin/bash
+# My first script
+#
+#
+# See käsk prindib ekraanile jutumärkide sees paikneva teksti:
+# echo "Tere User"
+echo -n "Tere, " # Väljasta ilma reavahetuseta Tere, 
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]` # llõikab esimese tähe ja muudab suureks 
+echo -n `who am i | cut -c2-` # lõikab kõik tähed alates 2-st
+echo -n "!"
+#
+# lõpp
