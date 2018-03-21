@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Täna on "
+date +"%A, %B %d, %Y" #Prindib päeva, kuupäeva ja aasta
+echo -n "Kell on "
+date +"%H:%M" #Prindib kellaaja
+
+echo "Kalender"
+cal #Prindib kalendri
+
+#Selle skripti mõte on näidata täpset aega, päeva ja kuupäeva.
