@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Bussi ekskursioonid
+
+echo -n "kui palju on reisijaid: "	#Prindib küsimuslause
+read reisijad	#Tekitab lahtri kuhu sisestada reisijate arv
+echo -n "Mitu istekohta on bussis?: "	#Prindib teise küsimuslause
+read kohad	#Tekitb lahtri kuhu sisestada
+maha=`expr $kohad - $reisijad`	#Arvutab mitu inimest jäi maha
+taidetud=`expr $reisijad / $kohad`	#Arvutab mitu kohta täideti
+echo "Täis busse on $taidetud maha jäi $maha inimest" #Prindib kokkuvõtte
