@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#Küpsiste valmistamine
+
+# Kandiku pindala
+echo "Sisesta kandiku pikkus (cm):"
+read pikkus
+echo "Sisesta kandiku laius (cm):"
+read laius
+echo "Sisesta küpsiste pikkus:"
+read k_pikkus
+echo "Sisesta küpsiste laius:"
+read k_laius
+echo "Mitu küpsist on pakis?:"
+read mitu
+echo "Mitu kihti?:"
+read kihtide_arv
+
+#Arvutab kandiku pindala
+pindala=`expr $pikkus \* $laius`
+#Arvutab küpsiste pindala
+kogus=`expr $k_pikkus \* $k_laius`
+#Küsib mitu küpsist on ühes kihis
+yheskihis=`expr $pindala / $kogus`
+
+echo "Kandiku pindala on $pindala cm ja küpsiste pindala $kogus cm, ühes kihis on $yheskihis küpsist"
+
+#Mitu pakki küpsiseid on vaja, et täita üks kiht
+yheskihispakke=`expr $yheskihis / $mitu`
+
+#Pakkide arv
+kokku=`expr $yheskihispakke \* $kihtide_arv`
+
+#Mitu pakki on vaja
+echo "poest on vaja osta $kokku pakki"
