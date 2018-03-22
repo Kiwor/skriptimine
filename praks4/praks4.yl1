@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Sisesta oma ees- ja perenimi:" #Prindib esimese lause
+read nimi #Loob lahtri kuhu sisestada nimi
+echo "Tere tulemast, $nimi" #Prindib automaatse tervituse
