@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "Kell: "
+date +"%T" #Prindib tööaja nii tundides, minutites kui ka sekundites
+uptime -p #Prindib arvuti tööajapikkuse
