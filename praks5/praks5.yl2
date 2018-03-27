@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Kolmnurga pindala
+
+echo -n "Sisesta a külje väärtus:"
+read a
+
+echo -n "Sisesta b külje väärtus:"
+read b
+
+echo -n "Sisesta c külje väärtus:"
+read c
+
+#Arvutamine
+
+P=`echo "scale=2;($a+$b+$c)/2" | bc` #Arvutab umbermoodu
+S=`echo "scale=2;sqrt ($P*($P-$a)*($P-$b)*($P-$c))" | bc` #Arvutab pindala
+echo "Pindala=$S"
