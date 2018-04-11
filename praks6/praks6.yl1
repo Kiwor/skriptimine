@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo -n "Sisesta suvaline taisarv: "
+read arv
+
+jaak=$(( $arv % 2 )) #Arvutatakse sisestatud arv 2-ga
+
+#Kui tehte tulemuseks saadakse 0, siis arv on paaris
+#Kui tehte tulemuseks saadakse 1, siis arvu on paaritu
+
+if [ $jaak -eq 0 ]
+then
+
+echo "Arv $arv on paaris"
+
+else
+
+echo "Arv $arv on paaritu" #Prindib tulemuse
+
+fi
