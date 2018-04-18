@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Reisijate loetlemine
+echo -n "Sisesta reisijate arv: "
+read reisijad
+
+
+#Kohtade loetlemine
+echo -n "Sisesta kohtade arv bussis: "
+read kohad
+
+
+#Arvutused
+bussid=$(($reisijad / $kohad)) #Ülejäänud reisijate arvutamine
+ylejaanud=$(($reisijad % $kohad))
+
+
+if test $ylejaanud -gt 0
+then
+	bussid=$(($bussid + 1)) #Ülejäägi koral tuleb suurendada busside arvu 1 võrra
+fi
+
+echo "Kokku on vaja $bussid täisbussi"
