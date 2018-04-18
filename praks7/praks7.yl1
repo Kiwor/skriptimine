@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo -n "Sisesta oma vanus: " #Prindib teksti
+read vanus
+if test $vanus -gt 0 -a $vanus -lt 11 #Vanuses 0-11 peetakse isikut lapseks
+then
+      echo "Oled laps" #Vanustele 0-11 prindub teksti "Oled laps"
+
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+      echo "Oled Nooruk"
+
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+      echo "Oled taiskasvanu"
+
+elif test $vanus -ge 63 #Vanem kui 63 on senioor 
+then
+      echo "Oled senioor"
+
+else
+      echo "Vigane sisend"
+fi
+
