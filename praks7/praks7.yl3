@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo -n "Sisesta aja väärtus: "
+read aeg
+
+if [[ $aeg -ge 6 ]] && [[ $aeg -le 11 ]] #6-11 on hommik
+then
+      echo "Tere hommikust!"
+
+elif [[ $aeg -ge 12 ]] && [[ $aeg -le 17 ]]
+then
+      echo "Tere päevast!"
+
+elif [[ $aeg -ge 18 ]] && [[ $aeg -le 21 ]]
+then
+      echo "Tere õhtust!"
+
+elif [[ $aeg -ge 22 ]] && [[ $aeg -le 24 ]]
+then
+      echo "Head ööd!"
+
+elif [[ $aeg -ge 1 ]] && [[ $aeg -le 5 ]] #Head ööd tuli jaotada kahe käsuga, kuna 22-5 ei ole võimalik teostada
+then
+      echo "Head ööd!"
+
+fi
