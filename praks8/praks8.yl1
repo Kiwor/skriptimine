@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Arvud prinditakse foreach käsuga
+for arv in {1..10}
+do
+	echo $arv
+done
